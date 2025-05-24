@@ -15,7 +15,10 @@
 
 <body>
     <x-navbar/>
-    {{ $slot }}
+    <div class="container-fluid p-0">
+        {{ $slot }}
+    </div>
+    <x-footer/>
 </body>
 
 </html>

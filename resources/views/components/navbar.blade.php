@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg  text-uppercase fs-6 px-1 py-2 border-bottom align-items-center">
+<nav class="navbar navbar-expand-lg sticky-top bg-carne text-uppercase fs-6 px-1 py-2 border-bottom align-items-center">
     <div class="container-fluid">
         <div class="row justify-content-between align-items-center w-100">
             <div class="col-auto">
@@ -21,7 +21,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-4 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Chi sono?</a>
+                                <a class="nav-link" href="#chi-sono">Chi sono?</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Il mio negozio</a>
@@ -39,3 +39,4 @@
         </div>
     </div>
 </nav>
+
