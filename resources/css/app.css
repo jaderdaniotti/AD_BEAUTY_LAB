@@ -155,7 +155,70 @@ h2 {
 /* #endregion */
 
 
+/* #region NAVBAR */
 
+.nav-link {
+  color: var(--coloretesto); /* Testo bianco */
+  text-shadow: 
+    0 0 5px var(--cipria), 
+    0 0 10px var(--salvia), 
+    0 0 15px var(--mattone);
+  transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: white; /* Mantieni il testo bianco */
+  text-shadow: 
+    0 0 10px var(--carne), 
+    0 0 20px var(--salvia), 
+    0 0 30px var(--coloretesto);
+}
+
+.navbar-toggler {
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+  transition: text-shadow 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-color: rgba(255, 255, 255, 0.5); /* Bordo bianco più evidente */
+  border-radius: 1rem; /* Puoi aumentare o diminuire il valore per arrotondare di più */
+}
+
+/* Effetto neon bianco all'hover */
+.navbar-toggler:hover {
+  color: white; /* Mantieni il testo bianco */
+  text-shadow: 0 0 10px var(--carne), 0 0 20px var(--salvia), 0 0 30px var(--coloretesto);
+  box-shadow: 0 0 25px white;
+  border: 1px solid white;
+  border-color: white;
+}
+
+/* Focus con effetto delicato (evita che l'ombra rimanga) */
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Neon più tenue */
+}
+
+/* Rimuove il focus visibile dopo il clic */
+.navbar-toggler:active {
+  box-shadow: none;
+}
+
+.btn-close:focus,
+.btn-close:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23FFFFFF' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* #endregion */
 
 
 
