@@ -1,6 +1,7 @@
 @import 'bootstrap';
 @import 'bootstrap-icons';
 
+/* #region Settings */
 :root {
     --coloretesto: #8E2F35;
     --salvia: #7B8F74;
@@ -14,21 +15,51 @@ body {
     background-color: var(--carne);
     color: var(--coloretesto);
 }
+
+/* #endregion */
+
+/* #region background */
 .bg-cipria {
     background-color: var(--cipria);
 }
+
 .bg-salvia {
     background-color: var(--salvia);
 }
+
 .bg-mattone {
     background-color: var(--mattone);
 }
-.bg-carne{
+
+.bg-carne {
     background-color: var(--carne);
 }
 
+/* #endregion */
 
 
+/* #region Text */
+.text-salvia {
+    color: var(--salvia);
+}
+
+.text-base {
+    color: var(--coloretesto);
+}
+
+.text-cipria {
+    color: var(--cipria);
+}
+
+.text-mattone {
+    color: var(--mattone);
+}
+
+.text-carne {
+    color: var(--carne);
+}
+
+/* #endregion */
 
 /* #region Fonts */
 .montserrat {
@@ -44,8 +75,9 @@ body {
     font-weight: 500;
     font-style: normal;
 }
+
 h1,
-h2{
+h2 {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -53,3 +85,80 @@ h2{
 }
 
 /* #endregion */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.finecss {
+    display: flex;
+}

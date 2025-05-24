@@ -1,31 +1,41 @@
-<nav class="navbar navbar-expand-lg bg-">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
+<nav class="navbar navbar-expand-lg  text-uppercase fs-6 px-1 py-2 border-bottom align-items-center">
+    <div class="container-fluid">
+        <div class="row justify-content-between align-items-center w-100">
+            <div class="col-auto">
+                <a class="navbar-brand text-white" href="index.html">
+                    <img src="\immagini\logo-senza-sfondo.png" alt="" height="60px">
+                </a>
+            </div>
+            <div class="col-auto">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas bg-carne offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AD Beauty Lab</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-4 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Chi sono?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Il mio negozio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Trattamenti</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contattami</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </nav>
