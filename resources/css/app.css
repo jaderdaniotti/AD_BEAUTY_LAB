@@ -1,2 +1,55 @@
 @import 'bootstrap';
-@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import 'bootstrap-icons';
+
+:root {
+    --coloretesto: #8E2F35;
+    --salvia: #7B8F74;
+    --cipria: #F3B4AB;
+    --mattone: #D6DDD5;
+    --carne: #FBD5CC;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--carne);
+    color: var(--coloretesto);
+}
+.bg-cipria {
+    background-color: var(--cipria);
+}
+.bg-salvia {
+    background-color: var(--salvia);
+}
+.bg-mattone {
+    background-color: var(--mattone);
+}
+.bg-carne{
+    background-color: var(--carne);
+}
+
+
+
+
+/* #region Fonts */
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.playfair-display {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+h1,
+h2{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* #endregion */
