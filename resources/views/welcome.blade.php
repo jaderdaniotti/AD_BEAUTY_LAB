@@ -1,9 +1,9 @@
-<x-layout>
+{{-- <x-layout>
     <section class="bg-carne d-flex flex-column gap-3 justify-content-center align-items-center p-3 py-5 min-vh-50" id="home">
 
     </section>
     
-      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         let homesection = document.getElementById('home');
 
@@ -45,5 +45,32 @@
                 </p>
             </div>
         </div>
+    </section>
+</x-layout> --}}
+
+<x-layout>
+    <section class="bg-carne d-flex flex-column gap-3 justify-content-center align-items-center p-3 py-5 min-vh-50" id="home">
+    </section>
+
+    <section class="bg-salvia min-vh-100 p-3" id="chi-sono">
+      <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-5 d-flex justify-content-center">
+                <img src="\immagini\estetista.png" alt=""
+                class="img-fluid object-fit-contain animate__animated animate__backInLeft">
+            </div>
+            <div class="col-12 d-lg-none">
+                <hr>
+            </div>
+            <div class="col-12 col-lg-7 d-flex flex-column gap-3 px-3 justify-content-center align-items-center">
+                <h1 class="display-1">Chi sono?</h1>
+                <p class="fs-5 fw-light text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quidem quasi dignissimos reiciendis
+                    recusandae, maiores dolores. Perferendis illo, impedit deleniti cum placeat provident eum sunt
+                    aperiam, eos debitis iusto obcaecati.
+                </p>
+            </div>
+        </div>
+      </div>
     </section>
 </x-layout>

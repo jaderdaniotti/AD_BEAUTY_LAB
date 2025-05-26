@@ -1,9 +1,9 @@
-<nav class="navbar navbar-expand-lg sticky-top bg-carne text-uppercase fs-6 px-1 py-2 border-bottom align-items-center">
+<nav class="navbar navbar-expand-lg sticky-top bg-cipria text-uppercase fs-6 px-1 py-2 border-bottom align-items-center">
     <div class="container-fluid">
         <div class="row justify-content-between align-items-center w-100">
             <div class="col-auto">
-                <a class="navbar-brand text-white" href="index.html">
-                    <img src="\immagini\logo-senza-sfondo.png" alt="" height="60px">
+                <a class="navbar-brand text-white" href="{{ route('homepageRoute') }}">
+                    <img src="\immagini\logo-senza-sfondo-bianco.png" alt="" height="60px">
                 </a>
             </div>
             <div class="col-auto">
@@ -14,7 +14,7 @@
                 <div class="offcanvas bg-carne offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AD Beauty Lab</h5>
+                        <h5 class="offcanvas-title title-nav-toggler" id="offcanvasNavbarLabel">AD BeautyLab</h5>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
@@ -27,10 +27,10 @@
                                 <a class="nav-link" href="#">Il mio negozio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Trattamenti</a>
+                                <a class="nav-link" href="{{ route('treatmentsRoute') }}">Trattamenti</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contattami</a>
+                                <a class="nav-link" href="{{ route('contactsRoute') }}">Contatti</a>
                             </li>
                         </ul>
                     </div>

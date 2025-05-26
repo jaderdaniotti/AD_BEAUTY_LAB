@@ -2,28 +2,30 @@
 @import 'bootstrap-icons';
 @import 'animate.css';
 
-/* #region Settings */
+/* #region SETTINGS */
+
 :root {
-    --coloretesto: #8E2F35;
+    --coloretesto-mattone: #8E2F35;
     --salvia: #7B8F74;
-    --cipria: #F3B4AB;
-    --mattone: #D6DDD5;
-    --carne: #FBD5CC;
+    --cipria: #f3b0a6;
+    --bianco-sporco: #D6DDD5;
+    --carne: #fdcfc5;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--carne);
-    color: var(--coloretesto);
+    color: var(--coloretesto-mattone);
 }
 
-.min-vh-50{
+.min-vh-50 {
     min-height: 50vh;
 }
 
 /* #endregion */
 
-/* #region background */
+/* #region BACKGROUNDS */
+
 .bg-cipria {
     background-color: var(--cipria);
 }
@@ -32,8 +34,8 @@ body {
     background-color: var(--salvia);
 }
 
-.bg-mattone {
-    background-color: var(--mattone);
+.bg-bianco-sporco {
+    background-color: var(--bianco-sporco);
 }
 
 .bg-carne {
@@ -42,21 +44,22 @@ body {
 
 /* #endregion */
 
-/* #region Text */
+/* #region TEXT */
+
 .text-salvia {
     color: var(--salvia);
 }
 
 .text-base {
-    color: var(--coloretesto);
+    color: var(--coloretesto-mattone);
 }
 
 .text-cipria {
     color: var(--cipria);
 }
 
-.text-mattone {
-    color: var(--mattone);
+.text-bianco-sporco {
+    color: var(--bianco-sporco);
 }
 
 .text-carne {
@@ -65,7 +68,8 @@ body {
 
 /* #endregion */
 
-/* #region Fonts */
+/* #region FONTS */
+
 .montserrat {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -73,25 +77,54 @@ body {
     font-style: normal;
 }
 
-.playfair-display {
+h1, h2, .playfair-display {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
 }
 
-h1,
-h2 {
+.title-nav-toggler {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    color: var(--coloretesto-mattone);
+    text-shadow: 0 0 5px var(--cipria), 0 0 10px var(--salvia), 0 0 15px var(--bianco-sporco);
+    transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@media (max-width: 767px) { /* Schermi piccoli */
+    .playfair-display {
+        font-size: 2.5rem; 
+    }
+    .footerSize {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) { /* Schermi medi */
+    .playfair-display {
+        font-size: 1.5rem; 
+    }
+    .footerSize {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 992px) { /* Schermi grandi */
+    .playfair-display {
+        font-size: 2.5rem; 
+    }
+    .footerSize {
+        font-size: 1.2rem;
+    }
 }
 
 /* #endregion */
 
-
 /* #region BTN */
+
 .bookmarkBtn {
     width: 100px;
     height: 40px;
@@ -158,57 +191,46 @@ h2 {
 /* #region NAVBAR */
 
 .nav-link {
-  color: var(--coloretesto); /* Testo bianco */
-  text-shadow: 
-    0 0 5px var(--cipria), 
-    0 0 10px var(--salvia), 
-    0 0 15px var(--mattone);
-  transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: var(--coloretesto-mattone);
+    text-shadow: 0 0 5px var(--cipria), 0 0 10px var(--salvia), 0 0 15px var(--bianco-sporco);
+    transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: white; /* Mantieni il testo bianco */
-  text-shadow: 
-    0 0 10px var(--carne), 
-    0 0 20px var(--salvia), 
-    0 0 30px var(--coloretesto);
+.nav-link:hover, .nav-link:focus {
+    color: white;
+    text-shadow:0 0 10px var(--carne), 0 0 20px var(--salvia), 0 0 30px var(--coloretesto-mattone);
 }
 
 .navbar-toggler {
-  border-radius: 10px;
-  background: transparent;
-  color: white;
-  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
-  transition: text-shadow 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  border-color: rgba(255, 255, 255, 0.5); /* Bordo bianco più evidente */
-  border-radius: 1rem; /* Puoi aumentare o diminuire il valore per arrotondare di più */
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    transition: text-shadow 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;/* Bordo bianco più evidente */
 }
 
-/* Effetto neon bianco all'hover */
 .navbar-toggler:hover {
-  color: white; /* Mantieni il testo bianco */
-  text-shadow: 0 0 10px var(--carne), 0 0 20px var(--salvia), 0 0 30px var(--coloretesto);
-  box-shadow: 0 0 25px white;
-  border: 1px solid white;
-  border-color: white;
+    color: white;/* Effetto neon bianco all'hover */
+    text-shadow: 0 0 10px var(--carne), 0 0 20px var(--salvia), 0 0 30px var(--coloretesto-mattone);/* Mantieni il testo bianco */
+    box-shadow: 0 0 25px white;
+    border: 1px solid white;
+    border-color: white;
 }
 
-/* Focus con effetto delicato (evita che l'ombra rimanga) */
 .navbar-toggler:focus {
-  outline: none;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Neon più tenue */
+    outline: none;/* Focus con effetto delicato (evita che l'ombra rimanga) */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);/* Neon più tenue */
 }
 
-/* Rimuove il focus visibile dopo il clic */
 .navbar-toggler:active {
-  box-shadow: none;
+    box-shadow: none;/* Rimuove il focus visibile dopo il clic */
 }
 
-.btn-close:focus,
-.btn-close:active {
-  outline: none;
-  box-shadow: none;
+.btn-close:focus, .btn-close:active {
+    outline: none;
+    box-shadow: none;
 }
 
 .navbar-toggler-icon {
@@ -220,7 +242,99 @@ h2 {
 
 /* #endregion */
 
+/* region CONTACTS */
 
+.contact-container {
+    max-width: 600px; 
+    width: 100%; 
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: var(--cipria);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--salvia);
+    text-align: center;
+}
+
+h2 {
+    color: var(--coloretesto-mattone);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: var(--coloretesto-mattone);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid var(--cipria);
+    border-radius: 5px;
+    background: var(--bianco-sporco);
+    color: var(--coloretesto-mattone);
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--carne); /* Mantiene il colore originale */
+    outline: 1px solid white; /* Sostituisce il nero con un bordo colorato */
+    box-shadow: 0 0 5px white; /* Aggiunge un bagliore leggero */
+}
+
+.submit-btn {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--coloretesto-mattone);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: var(--carne);
+    color: var(--coloretesto-mattone);
+}
+
+[data-slide-down] {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideDown 0.8s ease-in-out forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* endregion */
+
+/* region FOOTER */
+
+.fot-link:hover, .fot-link:focus {
+    color: white;
+    text-shadow:0 0 10px var(--carne), 0 0 20px var(--salvia), 0 0 30px var(--coloretesto-mattone);
+}
+
+/* endregion */
 
 
 

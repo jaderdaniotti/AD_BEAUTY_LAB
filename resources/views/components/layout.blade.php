@@ -14,11 +14,11 @@
 </head>
 
 <body>
-    <x-navbar/>
-    <div class="container-fluid p-0">
+    <x-navbar class="container-fluid" />
+    <div class="container-fluid d-flex flex-column min-vh-100 p-0">
         {{ $slot }}
     </div>
-    <x-footer/>
+    <x-footer class="footer py-3"/>
 </body>
 
 </html>
